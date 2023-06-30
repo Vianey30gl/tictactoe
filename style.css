@@ -1,92 +1,56 @@
 body{
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg,#6027e3,#db80ff) ;
+    background: linear-gradient(135deg,#6027e3,#e297ff) ; 
     color: rgb(255, 255, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+  .todo {
+   position: absolute;
+   transform: translate(-50% ,-50%);
+   top: 50%;
+   left: 50%;
+ }
+  
+  .container{
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap ;
+  gap: 2vmin
+   ;
+  }
 
-.columnas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 250px;
-    width: 250px;
-}
-
-.cuadro{
-    border: 1px solid;
-}
-
-#resultados{
-   position: relative;
-   top: 10px;
-   height: 10px;
-}
-
-#Reiniciar{
-    color: rgb(255, 255, 255);
-    background-color:#a580fa;
-    border-radius: 5px;
+  h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: #a580fa solid;
-    position: relative;
-    display: block;
-    margin: 1em auto ;
-}
-.Game{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-.Contenedor{
-    width: 70vmin;
-    height: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vmin;
-
-}
-.boton{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 8px;
-    border: none;
-    font-size: 8vmin;
-    color: #636168;
-}
-h1{
- font-family: Georgia, 'Times New Roman', Times, serif;
- align-items: center;
-}
- .textos{
-    background: linear-gradient(135deg,#6027e3,#db80ff)   ;
-    height:100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    z-index: 2;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 12vmin;
-}
- #nuevojuego{
-    font-size: 0.6em;
-    padding: 0.5em 1em;
-    background-color: #a580fa;
-    color: rgb(255, 255, 255);
-    border-radius: 0,2em ;
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+  }
+
+ .td{
+  background: white;
+  height: 22vmin;
+  width: 22vmin;
+  border: none;
+  border-radius: 6px;
+  font-size: 12vmin;
+  color: rgb(194, 192, 192);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1 );
  }
 
- #Mensaje{
-    color: #ffff;
-    text-align: center;
-    font-size: 1em;
- }
-
- .textos1{
-  display: none;
+ #btn{
+  font-size: 0.7em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 1em;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #db82fe;
+  position: relative;
+  margin:  1em auto;
+  display: block;
+  border: none;
  }
