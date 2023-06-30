@@ -1,33 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego TicTacToe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="Game">
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <!-- Importa el archivo de estilos de CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <di class="todo">
     <h1>Juego De "Gato"</h1>
-    <div class="Contenedor">
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-        <button class="boton"></button>
-
-    </div>
-    <button id="Reiniciar">Reiniciar</button>
+    <div class="container">
+    <table class="table">
+  
+      <tr class="container">
+        <button class="td" id="0"></button>
+        <button class="td" id="1"></button>
+        <button class="td" id="2"></button>
+      
+      <tr class="container">
+        <button class="td" id="3"></button>
+        <button class="td" id="4"></button>
+        <button class="td" id="5"></button>
+      </tr>
+      <tr class="container">
+        <button class="td" id="6"></button>
+        <button class="td" id="7"></button>
+        <button class="td" id="8"></button>
+      </tr>
+    </table>
   </div>
-<div class="textos1">
-    <p id="mensage"> Mensaje</p>
-    <button id="nuevojuego">Nuevo juego</button>
-
 </div>
-<script src="main.js"></script>
-</body>
+    <h2 id="ganador"></h2>
+    <h2 id="perdedor"></h2>
+    <button id="btn">Reiniciar juego</button>
+    <script src="gato.js"></script>
+  </body>
 </html>
